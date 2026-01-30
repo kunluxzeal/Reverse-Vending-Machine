@@ -44,3 +44,17 @@ libraries by scanning project source files.
 
 More information about PlatformIO Library Dependency Finder
 - https://docs.platformio.org/page/librarymanager/ldf.html
+
+
+site for resizing images 
+
+https://www.simpleimageresizer.com/#google_vignette  
+
+
+site for generating qr code image
+
+https://app.qr-code-generator.com/manage?download=88650571&login=1  
+
+site for image to c converter 
+
+https://lvgl.io/tools/imageconverter

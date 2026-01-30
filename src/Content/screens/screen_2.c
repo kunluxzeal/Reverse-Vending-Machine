@@ -6,242 +6,174 @@ void GUI_initScreen__screen_2()
 {
     GUI_Screen__screen_2 = lv_obj_create(NULL);
     lv_obj_remove_flag(GUI_Screen__screen_2, LV_OBJ_FLAG_SCROLLABLE);
-    GUI_Image__screen_2__image_22 = lv_image_create(GUI_Screen__screen_2);
-    lv_obj_add_flag(GUI_Image__screen_2__image_22, LV_OBJ_FLAG_ADV_HITTEST);
-    lv_obj_remove_flag(GUI_Image__screen_2__image_22, LV_OBJ_FLAG_SCROLLABLE);
-    lv_obj_set_align(GUI_Image__screen_2__image_22, LV_ALIGN_CENTER);
-    lv_obj_set_pos(GUI_Image__screen_2__image_22, 1, -8);
-    lv_obj_set_size(GUI_Image__screen_2__image_22, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
+    GUI_Image__screen_2__Frame_10_3 = lv_image_create(GUI_Screen__screen_2);
+    lv_obj_remove_flag(GUI_Image__screen_2__Frame_10_3, LV_OBJ_FLAG_SCROLLABLE);
+    lv_obj_set_align(GUI_Image__screen_2__Frame_10_3, LV_ALIGN_CENTER);
+    lv_obj_set_size(GUI_Image__screen_2__Frame_10_3, 800, 480);
 
-    GUI_Image__screen_2__image_23 = lv_image_create(GUI_Screen__screen_2);
-    lv_obj_add_flag(GUI_Image__screen_2__image_23, LV_OBJ_FLAG_ADV_HITTEST);
-    lv_obj_remove_flag(GUI_Image__screen_2__image_23, LV_OBJ_FLAG_SCROLLABLE);
-    lv_obj_set_align(GUI_Image__screen_2__image_23, LV_ALIGN_CENTER);
-    lv_obj_set_pos(GUI_Image__screen_2__image_23, 210, -7);
-    lv_obj_set_size(GUI_Image__screen_2__image_23, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
+    GUI_Label__screen_2__label_46 = lv_label_create(GUI_Screen__screen_2);
+    lv_label_set_long_mode(GUI_Label__screen_2__label_46, LV_LABEL_LONG_WRAP);
+    lv_obj_set_align(GUI_Label__screen_2__label_46, LV_ALIGN_CENTER);
+    lv_obj_set_pos(GUI_Label__screen_2__label_46, -21, -209);
+    lv_obj_set_size(GUI_Label__screen_2__label_46, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
 
-    GUI_Panel__screen_2__panel = lv_obj_create(GUI_Screen__screen_2);
-    lv_obj_remove_flag(GUI_Panel__screen_2__panel, LV_OBJ_FLAG_SCROLLABLE);
-    lv_obj_set_align(GUI_Panel__screen_2__panel, LV_ALIGN_CENTER);
-    lv_obj_set_pos(GUI_Panel__screen_2__panel, -184, -53);
-    lv_obj_set_size(GUI_Panel__screen_2__panel, 336, 197);
+    GUI_Panel__screen_2__Rectangle_5 = lv_obj_create(GUI_Screen__screen_2);
+    lv_obj_remove_flag(GUI_Panel__screen_2__Rectangle_5, LV_OBJ_FLAG_SCROLLABLE);
+    lv_obj_set_align(GUI_Panel__screen_2__Rectangle_5, LV_ALIGN_CENTER);
+    lv_obj_set_pos(GUI_Panel__screen_2__Rectangle_5, 169, -5);
+    lv_obj_set_size(GUI_Panel__screen_2__Rectangle_5, 340, 322);
 
-    GUI_Panel__screen_2__panel_1 = lv_obj_create(GUI_Screen__screen_2);
-    lv_obj_remove_flag(GUI_Panel__screen_2__panel_1, LV_OBJ_FLAG_SCROLLABLE);
-    lv_obj_set_align(GUI_Panel__screen_2__panel_1, LV_ALIGN_CENTER);
-    lv_obj_set_pos(GUI_Panel__screen_2__panel_1, -184, 116);
-    lv_obj_set_size(GUI_Panel__screen_2__panel_1, 336, 115);
+    GUI_Label__screen_2__label_47 = lv_label_create(GUI_Screen__screen_2);
+    lv_label_set_long_mode(GUI_Label__screen_2__label_47, LV_LABEL_LONG_WRAP);
+    lv_obj_set_align(GUI_Label__screen_2__label_47, LV_ALIGN_CENTER);
+    lv_obj_set_pos(GUI_Label__screen_2__label_47, 169, -125);
+    lv_obj_set_size(GUI_Label__screen_2__label_47, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
 
-    GUI_Label__screen_2__label_12 = lv_label_create(GUI_Screen__screen_2);
-    lv_label_set_long_mode(GUI_Label__screen_2__label_12, LV_LABEL_LONG_WRAP);
-    lv_obj_set_align(GUI_Label__screen_2__label_12, LV_ALIGN_CENTER);
-    lv_obj_set_pos(GUI_Label__screen_2__label_12, -195, 80);
-    lv_obj_set_size(GUI_Label__screen_2__label_12, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
+    GUI_Label__screen_2__label_48 = lv_label_create(GUI_Screen__screen_2);
+    lv_label_set_long_mode(GUI_Label__screen_2__label_48, LV_LABEL_LONG_WRAP);
+    lv_obj_set_align(GUI_Label__screen_2__label_48, LV_ALIGN_CENTER);
+    lv_obj_set_pos(GUI_Label__screen_2__label_48, 163, 78);
+    lv_obj_set_size(GUI_Label__screen_2__label_48, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
 
-    GUI_Label__screen_2__label_13 = lv_label_create(GUI_Screen__screen_2);
-    lv_label_set_long_mode(GUI_Label__screen_2__label_13, LV_LABEL_LONG_WRAP);
-    lv_obj_set_align(GUI_Label__screen_2__label_13, LV_ALIGN_CENTER);
-    lv_obj_set_pos(GUI_Label__screen_2__label_13, 5, 209);
-    lv_obj_set_size(GUI_Label__screen_2__label_13, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
+    GUI_Label__screen_2__label_49 = lv_label_create(GUI_Screen__screen_2);
+    lv_label_set_long_mode(GUI_Label__screen_2__label_49, LV_LABEL_LONG_WRAP);
+    lv_obj_set_align(GUI_Label__screen_2__label_49, LV_ALIGN_CENTER);
+    lv_obj_set_pos(GUI_Label__screen_2__label_49, 165, 115);
+    lv_obj_set_size(GUI_Label__screen_2__label_49, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
 
-    GUI_Label__screen_2__label_14 = lv_label_create(GUI_Screen__screen_2);
-    lv_label_set_long_mode(GUI_Label__screen_2__label_14, LV_LABEL_LONG_WRAP);
-    lv_obj_set_align(GUI_Label__screen_2__label_14, LV_ALIGN_CENTER);
-    lv_obj_set_pos(GUI_Label__screen_2__label_14, -234, -119);
-    lv_obj_set_size(GUI_Label__screen_2__label_14, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
+    GUI_Panel__screen_2__Rectangle_6 = lv_obj_create(GUI_Screen__screen_2);
+    lv_obj_remove_flag(GUI_Panel__screen_2__Rectangle_6, LV_OBJ_FLAG_SCROLLABLE);
+    lv_obj_set_align(GUI_Panel__screen_2__Rectangle_6, LV_ALIGN_CENTER);
+    lv_obj_set_pos(GUI_Panel__screen_2__Rectangle_6, -193, -80);
+    lv_obj_set_size(GUI_Panel__screen_2__Rectangle_6, 329, 170);
 
-    GUI_Label__screen_2__label_15 = lv_label_create(GUI_Screen__screen_2);
-    lv_label_set_long_mode(GUI_Label__screen_2__label_15, LV_LABEL_LONG_WRAP);
-    lv_obj_set_align(GUI_Label__screen_2__label_15, LV_ALIGN_CENTER);
-    lv_obj_set_pos(GUI_Label__screen_2__label_15, -273, -79);
-    lv_obj_set_size(GUI_Label__screen_2__label_15, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
+    GUI_Label__screen_2__label_50 = lv_label_create(GUI_Screen__screen_2);
+    lv_label_set_long_mode(GUI_Label__screen_2__label_50, LV_LABEL_LONG_WRAP);
+    lv_obj_set_align(GUI_Label__screen_2__label_50, LV_ALIGN_CENTER);
+    lv_obj_set_pos(GUI_Label__screen_2__label_50, -256, -132);
+    lv_obj_set_size(GUI_Label__screen_2__label_50, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
 
-    GUI_Label__screen_2__label_16 = lv_label_create(GUI_Screen__screen_2);
-    lv_label_set_long_mode(GUI_Label__screen_2__label_16, LV_LABEL_LONG_WRAP);
-    lv_obj_set_align(GUI_Label__screen_2__label_16, LV_ALIGN_CENTER);
-    lv_obj_set_pos(GUI_Label__screen_2__label_16, -261, -53);
-    lv_obj_set_size(GUI_Label__screen_2__label_16, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
+    GUI_Label__screen_2__label_51 = lv_label_create(GUI_Screen__screen_2);
+    lv_label_set_long_mode(GUI_Label__screen_2__label_51, LV_LABEL_LONG_WRAP);
+    lv_obj_set_align(GUI_Label__screen_2__label_51, LV_ALIGN_CENTER);
+    lv_obj_set_pos(GUI_Label__screen_2__label_51, -291, -102);
+    lv_obj_set_size(GUI_Label__screen_2__label_51, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
 
-    GUI_Label__screen_2__label_17 = lv_label_create(GUI_Screen__screen_2);
-    lv_label_set_long_mode(GUI_Label__screen_2__label_17, LV_LABEL_LONG_WRAP);
-    lv_obj_set_align(GUI_Label__screen_2__label_17, LV_ALIGN_CENTER);
-    lv_obj_set_pos(GUI_Label__screen_2__label_17, -243, 9);
-    lv_obj_set_size(GUI_Label__screen_2__label_17, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
+    GUI_Label__screen_2__label_52 = lv_label_create(GUI_Screen__screen_2);
+    lv_label_set_long_mode(GUI_Label__screen_2__label_52, LV_LABEL_LONG_WRAP);
+    lv_obj_set_align(GUI_Label__screen_2__label_52, LV_ALIGN_CENTER);
+    lv_obj_set_pos(GUI_Label__screen_2__label_52, -270, -74);
+    lv_obj_set_size(GUI_Label__screen_2__label_52, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
 
-    GUI_Image__screen_2__image_26 = lv_image_create(GUI_Screen__screen_2);
-    lv_obj_add_flag(GUI_Image__screen_2__image_26, LV_OBJ_FLAG_ADV_HITTEST);
-    lv_obj_remove_flag(GUI_Image__screen_2__image_26, LV_OBJ_FLAG_SCROLLABLE);
-    lv_obj_set_align(GUI_Image__screen_2__image_26, LV_ALIGN_CENTER);
-    lv_obj_set_pos(GUI_Image__screen_2__image_26, 369, 219);
-    lv_obj_set_size(GUI_Image__screen_2__image_26, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
+    GUI_Image__screen_2__image_5 = lv_image_create(GUI_Screen__screen_2);
+    lv_obj_add_flag(GUI_Image__screen_2__image_5, LV_OBJ_FLAG_ADV_HITTEST);
+    lv_obj_remove_flag(GUI_Image__screen_2__image_5, LV_OBJ_FLAG_SCROLLABLE);
+    lv_obj_set_align(GUI_Image__screen_2__image_5, LV_ALIGN_CENTER);
+    lv_obj_set_pos(GUI_Image__screen_2__image_5, -273, -51);
+    lv_obj_set_size(GUI_Image__screen_2__image_5, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
 
-    GUI_Image__screen_2__image_25 = lv_image_create(GUI_Screen__screen_2);
-    lv_obj_add_flag(GUI_Image__screen_2__image_25, LV_OBJ_FLAG_ADV_HITTEST);
-    lv_obj_remove_flag(GUI_Image__screen_2__image_25, LV_OBJ_FLAG_SCROLLABLE);
-    lv_obj_set_align(GUI_Image__screen_2__image_25, LV_ALIGN_CENTER);
-    lv_obj_set_pos(GUI_Image__screen_2__image_25, -372, -202);
-    lv_obj_set_size(GUI_Image__screen_2__image_25, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
+    GUI_Label__screen_2__label_53 = lv_label_create(GUI_Screen__screen_2);
+    lv_label_set_long_mode(GUI_Label__screen_2__label_53, LV_LABEL_LONG_WRAP);
+    lv_obj_set_align(GUI_Label__screen_2__label_53, LV_ALIGN_CENTER);
+    lv_obj_set_pos(GUI_Label__screen_2__label_53, -265, -29);
+    lv_obj_set_size(GUI_Label__screen_2__label_53, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
 
-    GUI_Label__screen_2__label_19 = lv_label_create(GUI_Screen__screen_2);
-    lv_label_set_long_mode(GUI_Label__screen_2__label_19, LV_LABEL_LONG_WRAP);
-    lv_obj_set_align(GUI_Label__screen_2__label_19, LV_ALIGN_CENTER);
-    lv_obj_set_pos(GUI_Label__screen_2__label_19, -215, 112);
-    lv_obj_set_size(GUI_Label__screen_2__label_19, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
+    GUI_Label__screen_2__label_54 = lv_label_create(GUI_Screen__screen_2);
+    lv_label_set_long_mode(GUI_Label__screen_2__label_54, LV_LABEL_LONG_WRAP);
+    lv_obj_set_align(GUI_Label__screen_2__label_54, LV_ALIGN_CENTER);
+    lv_obj_set_pos(GUI_Label__screen_2__label_54, -169, -104);
+    lv_obj_set_size(GUI_Label__screen_2__label_54, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
 
-    GUI_Label__screen_2__label_20 = lv_label_create(GUI_Screen__screen_2);
-    lv_label_set_long_mode(GUI_Label__screen_2__label_20, LV_LABEL_LONG_WRAP);
-    lv_obj_set_align(GUI_Label__screen_2__label_20, LV_ALIGN_CENTER);
-    lv_obj_set_pos(GUI_Label__screen_2__label_20, -224, 130);
-    lv_obj_set_size(GUI_Label__screen_2__label_20, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
+    GUI_Label__screen_2__label_55 = lv_label_create(GUI_Screen__screen_2);
+    lv_label_set_long_mode(GUI_Label__screen_2__label_55, LV_LABEL_LONG_WRAP);
+    lv_obj_set_align(GUI_Label__screen_2__label_55, LV_ALIGN_CENTER);
+    lv_obj_set_pos(GUI_Label__screen_2__label_55, -169, -77);
+    lv_obj_set_size(GUI_Label__screen_2__label_55, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
 
-    GUI_Label__screen_2__label_21 = lv_label_create(GUI_Screen__screen_2);
-    lv_label_set_long_mode(GUI_Label__screen_2__label_21, LV_LABEL_LONG_WRAP);
-    lv_obj_set_align(GUI_Label__screen_2__label_21, LV_ALIGN_CENTER);
-    lv_obj_set_pos(GUI_Label__screen_2__label_21, -202, 149);
-    lv_obj_set_size(GUI_Label__screen_2__label_21, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
+    GUI_Panel__screen_2__Rectangle_7 = lv_obj_create(GUI_Screen__screen_2);
+    lv_obj_remove_flag(GUI_Panel__screen_2__Rectangle_7, LV_OBJ_FLAG_SCROLLABLE);
+    lv_obj_set_align(GUI_Panel__screen_2__Rectangle_7, LV_ALIGN_CENTER);
+    lv_obj_set_pos(GUI_Panel__screen_2__Rectangle_7, -194, 91);
+    lv_obj_set_size(GUI_Panel__screen_2__Rectangle_7, 329, 137);
 
-    GUI_Label__screen_2__label_22 = lv_label_create(GUI_Screen__screen_2);
-    lv_label_set_long_mode(GUI_Label__screen_2__label_22, LV_LABEL_LONG_WRAP);
-    lv_obj_set_align(GUI_Label__screen_2__label_22, LV_ALIGN_CENTER);
-    lv_obj_set_pos(GUI_Label__screen_2__label_22, 215, 58);
-    lv_obj_set_size(GUI_Label__screen_2__label_22, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
+    GUI_Label__screen_2__label_1 = lv_label_create(GUI_Screen__screen_2);
+    lv_label_set_long_mode(GUI_Label__screen_2__label_1, LV_LABEL_LONG_WRAP);
+    lv_obj_set_align(GUI_Label__screen_2__label_1, LV_ALIGN_CENTER);
+    lv_obj_set_pos(GUI_Label__screen_2__label_1, -128, -103);
+    lv_obj_set_size(GUI_Label__screen_2__label_1, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
 
-    GUI_Label__screen_2__label_23 = lv_label_create(GUI_Screen__screen_2);
-    lv_label_set_long_mode(GUI_Label__screen_2__label_23, LV_LABEL_LONG_WRAP);
-    lv_obj_set_align(GUI_Label__screen_2__label_23, LV_ALIGN_CENTER);
-    lv_obj_set_pos(GUI_Label__screen_2__label_23, -151, -81);
-    lv_obj_set_size(GUI_Label__screen_2__label_23, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
+    GUI_Label__screen_2__label_2 = lv_label_create(GUI_Screen__screen_2);
+    lv_label_set_long_mode(GUI_Label__screen_2__label_2, LV_LABEL_LONG_WRAP);
+    lv_obj_set_align(GUI_Label__screen_2__label_2, LV_ALIGN_CENTER);
+    lv_obj_set_pos(GUI_Label__screen_2__label_2, -128, -76);
+    lv_obj_set_size(GUI_Label__screen_2__label_2, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
 
-    GUI_Label__screen_2__label_24 = lv_label_create(GUI_Screen__screen_2);
-    lv_label_set_long_mode(GUI_Label__screen_2__label_24, LV_LABEL_LONG_WRAP);
-    lv_obj_set_align(GUI_Label__screen_2__label_24, LV_ALIGN_CENTER);
-    lv_obj_set_pos(GUI_Label__screen_2__label_24, -151, -52);
-    lv_obj_set_size(GUI_Label__screen_2__label_24, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
+    GUI_Label__screen_2___114_1 = lv_label_create(GUI_Screen__screen_2);
+    lv_obj_remove_flag(GUI_Label__screen_2___114_1, LV_OBJ_FLAG_SCROLLABLE);
+    lv_label_set_long_mode(GUI_Label__screen_2___114_1, LV_LABEL_LONG_WRAP);
+    lv_obj_set_align(GUI_Label__screen_2___114_1, LV_ALIGN_CENTER);
+    lv_obj_set_pos(GUI_Label__screen_2___114_1, -130, -28);
+    lv_obj_set_size(GUI_Label__screen_2___114_1, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
 
-    GUI_Label__screen_2__label_25 = lv_label_create(GUI_Screen__screen_2);
-    lv_label_set_long_mode(GUI_Label__screen_2__label_25, LV_LABEL_LONG_WRAP);
-    lv_obj_set_align(GUI_Label__screen_2__label_25, LV_ALIGN_CENTER);
-    lv_obj_set_pos(GUI_Label__screen_2__label_25, -194, -80);
-    lv_obj_set_size(GUI_Label__screen_2__label_25, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
+    GUI_Label__screen_2__label_3 = lv_label_create(GUI_Screen__screen_2);
+    lv_label_set_long_mode(GUI_Label__screen_2__label_3, LV_LABEL_LONG_WRAP);
+    lv_obj_set_align(GUI_Label__screen_2__label_3, LV_ALIGN_CENTER);
+    lv_obj_set_pos(GUI_Label__screen_2__label_3, -169, -28);
+    lv_obj_set_size(GUI_Label__screen_2__label_3, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
 
-    GUI_Label__screen_2__label_26 = lv_label_create(GUI_Screen__screen_2);
-    lv_label_set_long_mode(GUI_Label__screen_2__label_26, LV_LABEL_LONG_WRAP);
-    lv_obj_set_align(GUI_Label__screen_2__label_26, LV_ALIGN_CENTER);
-    lv_obj_set_pos(GUI_Label__screen_2__label_26, -193, -53);
-    lv_obj_set_size(GUI_Label__screen_2__label_26, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
+    GUI_Label__screen_2__label_56 = lv_label_create(GUI_Screen__screen_2);
+    lv_label_set_long_mode(GUI_Label__screen_2__label_56, LV_LABEL_LONG_WRAP);
+    lv_obj_set_align(GUI_Label__screen_2__label_56, LV_ALIGN_CENTER);
+    lv_obj_set_pos(GUI_Label__screen_2__label_56, -102, -27);
+    lv_obj_set_size(GUI_Label__screen_2__label_56, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
 
-    GUI_Label__screen_2__label_27 = lv_label_create(GUI_Screen__screen_2);
-    lv_label_set_long_mode(GUI_Label__screen_2__label_27, LV_LABEL_LONG_WRAP);
-    lv_obj_set_align(GUI_Label__screen_2__label_27, LV_ALIGN_CENTER);
-    lv_obj_set_pos(GUI_Label__screen_2__label_27, -124, 7);
-    lv_obj_set_size(GUI_Label__screen_2__label_27, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
+    GUI_Label__screen_2__label_57 = lv_label_create(GUI_Screen__screen_2);
+    lv_label_set_long_mode(GUI_Label__screen_2__label_57, LV_LABEL_LONG_WRAP);
+    lv_obj_set_align(GUI_Label__screen_2__label_57, LV_ALIGN_CENTER);
+    lv_obj_set_pos(GUI_Label__screen_2__label_57, -196, 42);
+    lv_obj_set_size(GUI_Label__screen_2__label_57, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
 
-    GUI_Label__screen_2__label_28 = lv_label_create(GUI_Screen__screen_2);
-    lv_label_set_long_mode(GUI_Label__screen_2__label_28, LV_LABEL_LONG_WRAP);
-    lv_obj_set_align(GUI_Label__screen_2__label_28, LV_ALIGN_CENTER);
-    lv_obj_set_pos(GUI_Label__screen_2__label_28, -92, 10);
-    lv_obj_set_size(GUI_Label__screen_2__label_28, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
+    GUI_Label__screen_2__label_58 = lv_label_create(GUI_Screen__screen_2);
+    lv_label_set_long_mode(GUI_Label__screen_2__label_58, LV_LABEL_LONG_WRAP);
+    lv_obj_set_align(GUI_Label__screen_2__label_58, LV_ALIGN_CENTER);
+    lv_obj_set_pos(GUI_Label__screen_2__label_58, -199, 70);
+    lv_obj_set_size(GUI_Label__screen_2__label_58, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
 
-    GUI_Label__screen_2__label_29 = lv_label_create(GUI_Screen__screen_2);
-    lv_label_set_long_mode(GUI_Label__screen_2__label_29, LV_LABEL_LONG_WRAP);
-    lv_obj_set_align(GUI_Label__screen_2__label_29, LV_ALIGN_CENTER);
-    lv_obj_set_pos(GUI_Label__screen_2__label_29, -243, -20);
-    lv_obj_set_size(GUI_Label__screen_2__label_29, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
+    GUI_Label__screen_2__label_59 = lv_label_create(GUI_Screen__screen_2);
+    lv_label_set_long_mode(GUI_Label__screen_2__label_59, LV_LABEL_LONG_WRAP);
+    lv_obj_set_align(GUI_Label__screen_2__label_59, LV_ALIGN_CENTER);
+    lv_obj_set_pos(GUI_Label__screen_2__label_59, -210, 100);
+    lv_obj_set_size(GUI_Label__screen_2__label_59, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
 
-    GUI_Label__screen_2__label_30 = lv_label_create(GUI_Screen__screen_2);
-    lv_label_set_long_mode(GUI_Label__screen_2__label_30, LV_LABEL_LONG_WRAP);
-    lv_obj_set_align(GUI_Label__screen_2__label_30, LV_ALIGN_CENTER);
-    lv_obj_set_pos(GUI_Label__screen_2__label_30, -311, 103);
-    lv_obj_set_size(GUI_Label__screen_2__label_30, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
+    GUI_Label__screen_2__label_60 = lv_label_create(GUI_Screen__screen_2);
+    lv_label_set_long_mode(GUI_Label__screen_2__label_60, LV_LABEL_LONG_WRAP);
+    lv_obj_set_align(GUI_Label__screen_2__label_60, LV_ALIGN_CENTER);
+    lv_obj_set_pos(GUI_Label__screen_2__label_60, -179, 130);
+    lv_obj_set_size(GUI_Label__screen_2__label_60, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
 
-    GUI_Label__screen_2__label_31 = lv_label_create(GUI_Screen__screen_2);
-    lv_label_set_long_mode(GUI_Label__screen_2__label_31, LV_LABEL_LONG_WRAP);
-    lv_obj_set_align(GUI_Label__screen_2__label_31, LV_ALIGN_CENTER);
-    lv_obj_set_pos(GUI_Label__screen_2__label_31, -311, 140);
-    lv_obj_set_size(GUI_Label__screen_2__label_31, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
+    GUI_Label__screen_2__label_61 = lv_label_create(GUI_Screen__screen_2);
+    lv_label_set_long_mode(GUI_Label__screen_2__label_61, LV_LABEL_LONG_WRAP);
+    lv_obj_set_align(GUI_Label__screen_2__label_61, LV_ALIGN_CENTER);
+    lv_obj_set_pos(GUI_Label__screen_2__label_61, -333, 61);
+    lv_obj_set_size(GUI_Label__screen_2__label_61, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
 
-    GUI_Label__screen_2__label_32 = lv_label_create(GUI_Screen__screen_2);
-    lv_label_set_long_mode(GUI_Label__screen_2__label_32, LV_LABEL_LONG_WRAP);
-    lv_obj_set_align(GUI_Label__screen_2__label_32, LV_ALIGN_CENTER);
-    lv_obj_set_pos(GUI_Label__screen_2__label_32, -311, 122);
-    lv_obj_set_size(GUI_Label__screen_2__label_32, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
+    GUI_Label__screen_2__label_4 = lv_label_create(GUI_Screen__screen_2);
+    lv_label_set_long_mode(GUI_Label__screen_2__label_4, LV_LABEL_LONG_WRAP);
+    lv_obj_set_align(GUI_Label__screen_2__label_4, LV_ALIGN_CENTER);
+    lv_obj_set_pos(GUI_Label__screen_2__label_4, -333, 92);
+    lv_obj_set_size(GUI_Label__screen_2__label_4, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
 
-    GUI_Label__screen_2__label_33 = lv_label_create(GUI_Screen__screen_2);
-    lv_label_set_long_mode(GUI_Label__screen_2__label_33, LV_LABEL_LONG_WRAP);
-    lv_obj_set_align(GUI_Label__screen_2__label_33, LV_ALIGN_CENTER);
-    lv_obj_set_pos(GUI_Label__screen_2__label_33, -318, -88);
-    lv_obj_set_size(GUI_Label__screen_2__label_33, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
+    GUI_Label__screen_2__label_5 = lv_label_create(GUI_Screen__screen_2);
+    lv_label_set_long_mode(GUI_Label__screen_2__label_5, LV_LABEL_LONG_WRAP);
+    lv_obj_set_align(GUI_Label__screen_2__label_5, LV_ALIGN_CENTER);
+    lv_obj_set_pos(GUI_Label__screen_2__label_5, -333, 121);
+    lv_obj_set_size(GUI_Label__screen_2__label_5, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
 
-    GUI_Label__screen_2__label_34 = lv_label_create(GUI_Screen__screen_2);
-    lv_label_set_long_mode(GUI_Label__screen_2__label_34, LV_LABEL_LONG_WRAP);
-    lv_obj_set_align(GUI_Label__screen_2__label_34, LV_ALIGN_CENTER);
-    lv_obj_set_size(GUI_Label__screen_2__label_34, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
-
-    GUI_Label__screen_2__label_35 = lv_label_create(GUI_Screen__screen_2);
-    lv_label_set_long_mode(GUI_Label__screen_2__label_35, LV_LABEL_LONG_WRAP);
-    lv_obj_set_align(GUI_Label__screen_2__label_35, LV_ALIGN_CENTER);
-    lv_obj_set_pos(GUI_Label__screen_2__label_35, -319, -62);
-    lv_obj_set_size(GUI_Label__screen_2__label_35, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
-
-    GUI_Panel__screen_2__panel_2 = lv_obj_create(GUI_Screen__screen_2);
-    lv_obj_remove_flag(GUI_Panel__screen_2__panel_2, LV_OBJ_FLAG_SCROLLABLE);
-    lv_obj_set_align(GUI_Panel__screen_2__panel_2, LV_ALIGN_CENTER);
-    lv_obj_set_pos(GUI_Panel__screen_2__panel_2, 215, 97);
-    lv_obj_set_size(GUI_Panel__screen_2__panel_2, 195, 18);
-
-    GUI_Label__screen_2__label_36 = lv_label_create(GUI_Screen__screen_2);
-    lv_label_set_long_mode(GUI_Label__screen_2__label_36, LV_LABEL_LONG_WRAP);
-    lv_obj_set_align(GUI_Label__screen_2__label_36, LV_ALIGN_CENTER);
-    lv_obj_set_pos(GUI_Label__screen_2__label_36, 171, 97);
-    lv_obj_set_size(GUI_Label__screen_2__label_36, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
-
-    GUI_Label__screen_2__label_37 = lv_label_create(GUI_Screen__screen_2);
-    lv_label_set_long_mode(GUI_Label__screen_2__label_37, LV_LABEL_LONG_WRAP);
-    lv_obj_set_align(GUI_Label__screen_2__label_37, LV_ALIGN_CENTER);
-    lv_obj_set_pos(GUI_Label__screen_2__label_37, 216, 90);
-    lv_obj_set_size(GUI_Label__screen_2__label_37, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
-
-    GUI_Label__screen_2__label_38 = lv_label_create(GUI_Screen__screen_2);
-    lv_label_set_long_mode(GUI_Label__screen_2__label_38, LV_LABEL_LONG_WRAP);
-    lv_obj_set_align(GUI_Label__screen_2__label_38, LV_ALIGN_CENTER);
-    lv_obj_set_pos(GUI_Label__screen_2__label_38, 263, 97);
-    lv_obj_set_size(GUI_Label__screen_2__label_38, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
-
-    GUI_Label__screen_2__label_39 = lv_label_create(GUI_Screen__screen_2);
-    lv_label_set_long_mode(GUI_Label__screen_2__label_39, LV_LABEL_LONG_WRAP);
-    lv_obj_set_align(GUI_Label__screen_2__label_39, LV_ALIGN_CENTER);
-    lv_obj_set_pos(GUI_Label__screen_2__label_39, 211, -99);
-    lv_obj_set_size(GUI_Label__screen_2__label_39, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
-
-    GUI_Panel__screen_2__panel_3 = lv_obj_create(GUI_Screen__screen_2);
-    lv_obj_remove_flag(GUI_Panel__screen_2__panel_3, LV_OBJ_FLAG_SCROLLABLE);
-    lv_obj_set_align(GUI_Panel__screen_2__panel_3, LV_ALIGN_CENTER);
-    lv_obj_set_pos(GUI_Panel__screen_2__panel_3, 211, -18);
-    lv_obj_set_size(GUI_Panel__screen_2__panel_3, 165, 118);
-
-    GUI_Label__screen_2__label_10 = lv_label_create(GUI_Screen__screen_2);
-    lv_label_set_long_mode(GUI_Label__screen_2__label_10, LV_LABEL_LONG_WRAP);
-    lv_obj_set_align(GUI_Label__screen_2__label_10, LV_ALIGN_CENTER);
-    lv_obj_set_pos(GUI_Label__screen_2__label_10, -91, -82);
-    lv_obj_set_size(GUI_Label__screen_2__label_10, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
-
-    GUI_Label__screen_2__label_40 = lv_label_create(GUI_Screen__screen_2);
-    lv_label_set_long_mode(GUI_Label__screen_2__label_40, LV_LABEL_LONG_WRAP);
-    lv_obj_set_align(GUI_Label__screen_2__label_40, LV_ALIGN_CENTER);
-    lv_obj_set_pos(GUI_Label__screen_2__label_40, -91, -51);
-    lv_obj_set_size(GUI_Label__screen_2__label_40, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
-
-    GUI_Label__screen_2__label_41 = lv_label_create(GUI_Screen__screen_2);
-    lv_label_set_long_mode(GUI_Label__screen_2__label_41, LV_LABEL_LONG_WRAP);
-    lv_obj_set_align(GUI_Label__screen_2__label_41, LV_ALIGN_CENTER);
-    lv_obj_set_pos(GUI_Label__screen_2__label_41, -119, -82);
-    lv_obj_set_size(GUI_Label__screen_2__label_41, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
-
-    GUI_Label__screen_2__label_42 = lv_label_create(GUI_Screen__screen_2);
-    lv_label_set_long_mode(GUI_Label__screen_2__label_42, LV_LABEL_LONG_WRAP);
-    lv_obj_set_align(GUI_Label__screen_2__label_42, LV_ALIGN_CENTER);
-    lv_obj_set_pos(GUI_Label__screen_2__label_42, -120, -52);
-    lv_obj_set_size(GUI_Label__screen_2__label_42, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
+    GUI_Label__screen_2__label_6 = lv_label_create(GUI_Screen__screen_2);
+    lv_label_set_long_mode(GUI_Label__screen_2__label_6, LV_LABEL_LONG_WRAP);
+    lv_obj_set_align(GUI_Label__screen_2__label_6, LV_ALIGN_CENTER);
+    lv_obj_set_pos(GUI_Label__screen_2__label_6, -7, 207);
+    lv_obj_set_size(GUI_Label__screen_2__label_6, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
 
 
     GUI_initScreenStyles__screen_2();
@@ -251,113 +183,93 @@ void GUI_initScreen__screen_2()
 
 void GUI_initScreenTexts__screen_2()
 {
-    lv_label_set_text(GUI_Label__screen_2__label_12, "Instructions");
-    lv_label_set_text(GUI_Label__screen_2__label_13, "Thank you for recyling!");
-    lv_label_set_text(GUI_Label__screen_2__label_14, "Items Recycled");
-    lv_label_set_text(GUI_Label__screen_2__label_15, "PET Bottles ");
-    lv_label_set_text(GUI_Label__screen_2__label_16, "Aluminum Cans");
-    lv_label_set_text(GUI_Label__screen_2__label_17, "Total Amount");
-    lv_label_set_text(GUI_Label__screen_2__label_19, "Scan barcode with your app");
-    lv_label_set_text(GUI_Label__screen_2__label_20, "Confirm payment details");
-    lv_label_set_text(GUI_Label__screen_2__label_21, "Receive instant credit to account");
-    lv_label_set_text(GUI_Label__screen_2__label_22, "Use your app to scan");
-    lv_label_set_text(GUI_Label__screen_2__label_23, "0");
-    lv_label_set_text(GUI_Label__screen_2__label_24, "0");
-    lv_label_set_text(GUI_Label__screen_2__label_25, ":");
-    lv_label_set_text(GUI_Label__screen_2__label_26, ":");
-    lv_label_set_text(GUI_Label__screen_2__label_27, ":");
-    lv_label_set_text(GUI_Label__screen_2__label_28, "0");
-    lv_label_set_text(GUI_Label__screen_2__label_29, "______________________________");
-    lv_label_set_text(GUI_Label__screen_2__label_30, ".");
-    lv_label_set_text(GUI_Label__screen_2__label_31, ".");
-    lv_label_set_text(GUI_Label__screen_2__label_32, ".");
-    lv_label_set_text(GUI_Label__screen_2__label_33, ".");
-    lv_label_set_text(GUI_Label__screen_2__label_34, ".");
-    lv_label_set_text(GUI_Label__screen_2__label_35, ".");
-    lv_label_set_text(GUI_Label__screen_2__label_36, "Bank transfer ");
-    lv_label_set_text(GUI_Label__screen_2__label_37, ".");
-    lv_label_set_text(GUI_Label__screen_2__label_38, "Mobile Money");
-    lv_label_set_text(GUI_Label__screen_2__label_39, "Scan to Receive Payment");
-    lv_label_set_text(GUI_Label__screen_2__label_10, "0");
-    lv_label_set_text(GUI_Label__screen_2__label_40, "0");
-    lv_label_set_text(GUI_Label__screen_2__label_41, "x");
-    lv_label_set_text(GUI_Label__screen_2__label_42, "x");
+    lv_label_set_text(GUI_Label__screen_2__label_46, "Payment");
+    lv_label_set_text(GUI_Label__screen_2__label_47, "Scan to Receive Payment");
+    lv_label_set_text(GUI_Label__screen_2__label_48, "2026-500-001");
+    lv_label_set_text(GUI_Label__screen_2__label_49, "Transaction ID :TXN202650001");
+    lv_label_set_text(GUI_Label__screen_2__label_50, "Items Recycled");
+    lv_label_set_text(GUI_Label__screen_2__label_51, "PET Bottles");
+    lv_label_set_text(GUI_Label__screen_2__label_52, "Aluminum Cans");
+    lv_label_set_text(GUI_Label__screen_2__label_53, "Total Amount");
+    lv_label_set_text(GUI_Label__screen_2__label_54, ":");
+    lv_label_set_text(GUI_Label__screen_2__label_55, ":");
+    lv_label_set_text(GUI_Label__screen_2__label_1, "0");
+    lv_label_set_text(GUI_Label__screen_2__label_2, "0");
+    lv_label_set_text(GUI_Label__screen_2___114_1, "₦");
+    lv_label_set_text(GUI_Label__screen_2__label_3, ":");
+    lv_label_set_text(GUI_Label__screen_2__label_56, "0");
+    lv_label_set_text(GUI_Label__screen_2__label_57, "Instructions");
+    lv_label_set_text(GUI_Label__screen_2__label_58, "Scan barcode with your app");
+    lv_label_set_text(GUI_Label__screen_2__label_59, "Confirm payment details");
+    lv_label_set_text(GUI_Label__screen_2__label_60, "Receive instant credit to account");
+    lv_label_set_text(GUI_Label__screen_2__label_61, ".");
+    lv_label_set_text(GUI_Label__screen_2__label_4, ".");
+    lv_label_set_text(GUI_Label__screen_2__label_5, ".");
+    lv_label_set_text(GUI_Label__screen_2__label_6, "Thank You for recycling with EcoBarter !");
 }
 
 
 void GUI_initScreenStyles__screen_2()
 {
-    lv_obj_add_style(GUI_Screen__screen_2, &GUI_Style__class_mhPDSvBNA6VuzO__, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_image_set_src(GUI_Image__screen_2__Frame_10_3, &upload_frame_10_800x480_deae9b4c98214466b129acd5ae895ceb_png);
 
-    lv_image_set_src(GUI_Image__screen_2__image_22, &upload_vector_800x480_efe122e387d3452b82c309071d35b967_png);
+    lv_obj_add_style(GUI_Image__screen_2__Frame_10_3, &GUI_Style__class_JleJOa11p2Tms1__, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    lv_image_set_src(GUI_Image__screen_2__image_23, &upload_vector_280x280_4922c0b2d11645ecb6964b5000ff7e59_png);
+    lv_obj_add_style(GUI_Label__screen_2__label_46, &GUI_Style__class_6zGU6IFihRZGBk__, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    lv_obj_add_style(GUI_Image__screen_2__image_23, &GUI_Style__class_MFpfIYNsSfjfst__, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_add_style(GUI_Panel__screen_2__Rectangle_5, &GUI_Style__class_9LZS4gK3UEjKnZ__, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    lv_obj_add_style(GUI_Panel__screen_2__panel_1, &GUI_Style__class_w8aa4Wgu56NrT7__, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_add_style(GUI_Label__screen_2__label_47, &GUI_Style__class_PXUEzya4ioBKIS__, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    lv_obj_add_style(GUI_Label__screen_2__label_12, &GUI_Style__class_bYrhIpa3hAPt93__, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_add_style(GUI_Label__screen_2__label_48, &GUI_Style__class_oDzwkkUxCjNeXt__, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    lv_obj_add_style(GUI_Label__screen_2__label_13, &GUI_Style__class_wIKUNlKUt1gtjQ__, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_add_style(GUI_Label__screen_2__label_49, &GUI_Style__class_6koEsaD90WKMso__, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    lv_obj_add_style(GUI_Label__screen_2__label_14, &GUI_Style__class_CFVbTuAuXyTYRx__, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_add_style(GUI_Panel__screen_2__Rectangle_6, &GUI_Style__class_Nk1oc9gSvZG2vJ__, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    lv_obj_add_style(GUI_Label__screen_2__label_15, &GUI_Style__class_aAzgrLf0yJQMoM__, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_add_style(GUI_Label__screen_2__label_50, &GUI_Style__class_Z97Y0XvDAtxUaR__, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    lv_obj_add_style(GUI_Label__screen_2__label_16, &GUI_Style__class_C4oXuKkvBfbYTF__, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_add_style(GUI_Label__screen_2__label_51, &GUI_Style__class_Y33ZOMV5J9ehRi__, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    lv_obj_add_style(GUI_Label__screen_2__label_17, &GUI_Style__class_cBDGzGQtVdkAoZ__, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_add_style(GUI_Label__screen_2__label_52, &GUI_Style__class_JYlKbgrw02M15H__, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    lv_image_set_src(GUI_Image__screen_2__image_26, &upload_vector_120x120_42befb7f73aa4429aa80d754d7a5b864_png);
+    lv_image_set_src(GUI_Image__screen_2__image_5, &upload_vector_49_15_120x4_10a324c47e6b455eae3a1c904328f4a3_png);
 
-    lv_image_set_src(GUI_Image__screen_2__image_25, &upload_vector_80x80_7e603fce42ac472dae47fb7775f1ab4e_png);
+    lv_obj_add_style(GUI_Image__screen_2__image_5, &GUI_Style__class_W9paFAEM9vWTjp__, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    lv_obj_add_style(GUI_Label__screen_2__label_19, &GUI_Style__class_BMysOVZkx6CUfW__, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_add_style(GUI_Label__screen_2__label_53, &GUI_Style__class_UsF2f7YfE4e29z__, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    lv_obj_add_style(GUI_Label__screen_2__label_20, &GUI_Style__class_kMk2gVzGoaK67Q__, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_add_style(GUI_Label__screen_2__label_54, &GUI_Style__class_iZBcdDzacyRpS1__, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    lv_obj_add_style(GUI_Label__screen_2__label_21, &GUI_Style__class_uuZVZjjdStMBuo__, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_add_style(GUI_Label__screen_2__label_55, &GUI_Style__class_rNvDpqPoaHLDTz__, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    lv_obj_add_style(GUI_Label__screen_2__label_22, &GUI_Style__class_I8rZM97f8JewMC__, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_add_style(GUI_Panel__screen_2__Rectangle_7, &GUI_Style__class_n002cOfSwLJrTZ__, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    lv_obj_add_style(GUI_Label__screen_2__label_23, &GUI_Style__class_4uDnY5PDbQXDBx__, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_add_style(GUI_Label__screen_2__label_1, &GUI_Style__class_1abYeqAld5P56d__, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    lv_obj_add_style(GUI_Label__screen_2__label_24, &GUI_Style__class_w6pG0SdAzIU58B__, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_add_style(GUI_Label__screen_2__label_2, &GUI_Style__class_cwPM9CxRa12Qyy__, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    lv_obj_add_style(GUI_Label__screen_2__label_25, &GUI_Style__class_bQBl578tfWLPHd__, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_add_style(GUI_Label__screen_2___114_1, &GUI_Style__class_yHxcXp8cqLu0ui__, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    lv_obj_add_style(GUI_Label__screen_2__label_26, &GUI_Style__class_cphzecocykUnhG__, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_add_style(GUI_Label__screen_2__label_3, &GUI_Style__class_jOI9nE6TFcNPoM__, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    lv_obj_add_style(GUI_Label__screen_2__label_27, &GUI_Style__class_hJcZRKmuzocpAr__, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_add_style(GUI_Label__screen_2__label_56, &GUI_Style__class_zJgqy9ArOZZy0E__, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    lv_obj_add_style(GUI_Label__screen_2__label_28, &GUI_Style__class_IZ8gmLq6qtSQAV__, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_add_style(GUI_Label__screen_2__label_57, &GUI_Style__class_GyKLbCGuKaNDzW__, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    lv_obj_add_style(GUI_Label__screen_2__label_30, &GUI_Style__class_2SZkPd6E8g4kkg__, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_add_style(GUI_Label__screen_2__label_58, &GUI_Style__class_XoPeDgtroCqhpx__, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    lv_obj_add_style(GUI_Label__screen_2__label_31, &GUI_Style__class_xW7W8qhVWWAtf0__, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_add_style(GUI_Label__screen_2__label_59, &GUI_Style__class_4X35VrnWCgl6B8__, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    lv_obj_add_style(GUI_Label__screen_2__label_32, &GUI_Style__class_eFvrWhjiiVOUdP__, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_add_style(GUI_Label__screen_2__label_60, &GUI_Style__class_QP7bfjdOsHhuqA__, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    lv_obj_add_style(GUI_Label__screen_2__label_33, &GUI_Style__class_6rLUh02ae3r8gD__, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_add_style(GUI_Label__screen_2__label_61, &GUI_Style__class_P87GKovshccWIa__, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    lv_obj_add_style(GUI_Label__screen_2__label_34, &GUI_Style__class_2jQRUzDJArXrzI__, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_add_style(GUI_Label__screen_2__label_4, &GUI_Style__class_10IAZav9vNdPAu__, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    lv_obj_add_style(GUI_Label__screen_2__label_35, &GUI_Style__class_f79iwk6LcmcMaX__, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_add_style(GUI_Label__screen_2__label_5, &GUI_Style__class_rVyrskz9HPCb78__, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    lv_obj_add_style(GUI_Panel__screen_2__panel_2, &GUI_Style__class_Z7SFLrb0RLstLW__, LV_PART_MAIN | LV_STATE_DEFAULT);
-
-    lv_obj_add_style(GUI_Label__screen_2__label_36, &GUI_Style__class_rF82vjwrhcW0oH__, LV_PART_MAIN | LV_STATE_DEFAULT);
-
-    lv_obj_add_style(GUI_Label__screen_2__label_37, &GUI_Style__class_B46HWQWH7QIJbr__, LV_PART_MAIN | LV_STATE_DEFAULT);
-
-    lv_obj_add_style(GUI_Label__screen_2__label_38, &GUI_Style__class_nVw4qdGY6HBqKi__, LV_PART_MAIN | LV_STATE_DEFAULT);
-
-    lv_obj_add_style(GUI_Label__screen_2__label_39, &GUI_Style__class_mh9wzA6HJVCk9J__, LV_PART_MAIN | LV_STATE_DEFAULT);
-
-    lv_obj_add_style(GUI_Label__screen_2__label_10, &GUI_Style__class_kI9wn6boIxbVK1__, LV_PART_MAIN | LV_STATE_DEFAULT);
-
-    lv_obj_add_style(GUI_Label__screen_2__label_40, &GUI_Style__class_zxsttoDlU8R73i__, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_add_style(GUI_Label__screen_2__label_6, &GUI_Style__class_TAdw2bFZEN3aSX__, LV_PART_MAIN | LV_STATE_DEFAULT);
 
 }
 

@@ -2,10 +2,10 @@
 #include "GUI.h"
 #include "espnow_config.h"
 
-
 // Task handles
 TaskHandle_t lvglTaskHandle = NULL;
-TaskHandle_t espnowTaskHandle = NULL;
+TaskHandle_t espnowReceiveTaskHandle = NULL;
+TaskHandle_t espnowSendTaskHandle = NULL;
 TaskHandle_t lvglUpdateTaskHandle = NULL;
 
 // LVGL task - handles display refresh
@@ -21,7 +21,7 @@ void lvglTask(void *parameter) {
 
 void setup() {
     Serial.begin(115200);
-    Serial.println("Starting ESP32-S3 CYD with ESP-NOW...");
+    Serial.println("Starting ESP32-S3 CYD with Bidirectional ESP-NOW...");
     
     // Initialize display and LVGL
     setup_display();
@@ -29,41 +29,52 @@ void setup() {
     // Initialize SquareLine UI
     GUI_init();
     
-    // Initialize ESP-NOW
+    // Initialize ESP-NOW (now with bidirectional support)
     initESPNOW();
     
     // Create RTOS tasks
     // Task 1: LVGL refresh task (highest priority)
     xTaskCreatePinnedToCore(
-        lvglTask,           // Task function
-        "LVGL Task",        // Task name
-        4096,               // Stack size
-        NULL,               // Parameters
-        2,                  // Priority (higher)
-        &lvglTaskHandle,    // Task handle
-        1                   // Core 1
+        lvglTask,
+        "LVGL Task",
+        4096,
+        NULL,
+        2,
+        &lvglTaskHandle,
+        1
     );
     
-    // Task 2: ESP-NOW data handling task
+    // Task 2: ESP-NOW receive task
     xTaskCreatePinnedToCore(
-        espnowTask,         // Task function
-        "ESP-NOW Task",     // Task name
-        4096,               // Stack size
-        NULL,               // Parameters
-        1,                  // Priority (medium)
-        &espnowTaskHandle,  // Task handle
-        0                   // Core 0
+        espnowReceiveTask,
+        "ESP-NOW RX Task",
+        4096,
+        NULL,
+        1,
+        &espnowReceiveTaskHandle,
+        0
     );
     
-    // Task 3: LVGL UI update task
+    // Task 3: ESP-NOW send task
     xTaskCreatePinnedToCore(
-        lvglUpdateTask,         // Task function
-        "LVGL Update Task",     // Task name
-        4096,                   // Stack size
-        NULL,                   // Parameters
-        1,                      // Priority (medium)
-        &lvglUpdateTaskHandle,  // Task handle
-        1                       // Core 1 (same as LVGL)
+        espnowSendTask,
+        "ESP-NOW TX Task",
+        4096,
+        NULL,
+        1,
+        &espnowSendTaskHandle,
+        0
+    );
+    
+    // Task 4: LVGL UI update task
+    xTaskCreatePinnedToCore(
+        lvglUpdateTask,
+        "LVGL Update Task",
+        4096,
+        NULL,
+        1,
+        &lvglUpdateTaskHandle,
+        1
     );
     
     Serial.println("All tasks created successfully!");

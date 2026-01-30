@@ -7,14 +7,7 @@
 #include <freertos/task.h>
 #include <freertos/queue.h>
 
-// Define the data structure for ESP-NOW messages
-// typedef struct struct_message {
-//     int intValue;
-//     int intValue2;
-//     char stringValue[32];
-//     float floatValue;
-// } struct_message;
-
+// Data structure for ESP-NOW messages
 typedef struct struct_message {
     int total;
     int battery;
@@ -22,16 +15,22 @@ typedef struct struct_message {
     int headset;
 } struct_message;
 
-
 // Global variables
 extern struct_message incomingData;
-extern QueueHandle_t espnowQueue;
+extern struct_message outgoingData;
+extern QueueHandle_t espnowReceiveQueue;
+extern QueueHandle_t espnowSendQueue;
 extern SemaphoreHandle_t lvglMutex;
+extern uint8_t senderMacAddress[6];
+extern bool senderMacRegistered;
 
 // Function declarations
 void initESPNOW();
 void onDataRecv(const uint8_t *mac, const uint8_t *incomingDataPtr, int len);
-void espnowTask(void *parameter);
+void onDataSent(const uint8_t *mac_addr, esp_now_send_status_t status);
+void espnowReceiveTask(void *parameter);
+void espnowSendTask(void *parameter);
 void lvglUpdateTask(void *parameter);
+bool sendMessageToSender(int total, int battery, int cup, int headset);
 
 #endif // ESPNOW_CONFIG_H
